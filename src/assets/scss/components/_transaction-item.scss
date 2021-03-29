@@ -1,0 +1,48 @@
+.transaction-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    &__date {
+      margin: 0;
+      color: lightgray;
+    }
+  }
+  &__detail {
+    display: flex;
+    .icon {
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    &__title {
+      margin-left: 2rem;
+      @media screen and (max-width: 600px) {
+        margin-left: 0;
+      }
+      h5 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        color: lightgrey;
+      }
+    }
+    &__income {
+      color: green;
+    }
+    &__expense {
+      color: red;
+    }
+    &__view {
+      color: $orange-100;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.homepage__body {
+  margin-left: 15vw;
+  padding-bottom: 6rem;
+  @media screen and (max-width: 1400px) {
+    margin-left: 17vw;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-left: 20vw;
+  }
+  @media screen and (max-width: 992px) {
+    margin-left: 24vw;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+  &__top {
+    min-height: 20vh;
+    background: $dark;
+    padding: 2rem;
+    h1 {
+      color: white;
+      span {
+        color: $orange-100;
+      }
+    }
+  }
+  &__balance {
+    text-align: center;
+    background: $bg-color;
+    padding: 1rem;
+    h2 {
+      color: $dark;
+    }
+    p {
+      color: $orange-100;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 0;
+    }
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 6rem;
+    @media screen and (max-width: 1600px) {
+      margin: 3rem 5rem;
+    }
+    @media screen and (max-width: 1400px) {
+      margin: 3rem 2rem;
+    }
+    @media screen and (max-width: 1200px) {
+      margin: 3rem 1rem;
+    }
+    @media screen and (max-width: 600px) {
+      margin: 3rem 0;
+    }
+    &__card {
+      background: $bg-color;
+      border-radius: 8px;
+      box-shadow: 0 8px 6px -6px lightgrey;
+      padding: 1rem;
+      width: 100%;
+      margin: 0 2rem;
+      @media screen and (max-width: 768px) {
+        margin: 0 1rem;
+      }
+      &__inc {
+        color: green;
+      }
+      &__exp {
+        color: red;
+      }
+    }
+  }
+  &__transactions {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 8rem;
+    @media screen and (max-width: 1600px) {
+      margin: 3rem 5rem;
+    }
+    @media screen and (max-width: 1400px) {
+      margin: 3rem;
+    }
+    @media screen and (max-width: 1200px) {
+      margin: 3rem 2rem;
+    }
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 3rem 1rem;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 600px) {
+      margin: 3rem 0;
+    }
+    &__recent {
+      margin-top: 2rem;
+      &__title {
+        margin-bottom: 3rem;
+      }
+      @media screen and (max-width: 600px) {
+        margin: 0 1rem 3rem;
+      }
+      &__all {
+        &__title {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 3rem;
+
+          &__inc {
+            color: green;
+            background: $bg-color;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+          }
+          &__exp {
+            color: red;
+            background: $bg-color;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+    &__all {
+      text-align: left;
+      &__expense {
+        margin-top: 2rem;
+        &__title {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          @media screen and (max-width: 600px) {
+            margin: 0 1rem 3rem;
+          }
+          button {
+            border: none;
+            padding: 1rem;
+            background: $bg-color;
+            box-shadow: 0 8px 6px -6px lightgrey;
+            color: red;
+            font-weight: bold;
+          }
+        }
+        &__link {
+          text-align: right;
+          margin: 2rem 0;
+          font-size: 1.4rem;
+          @media screen and (max-width: 992px) {
+            margin-bottom: 4rem;
+          }
+        }
+      }
+      &__income {
+        margin-top: 2rem;
+        &__title {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          @media screen and (max-width: 600px) {
+            margin: 0 1rem 3rem;
+          }
+          button {
+            border: none;
+            padding: 1rem;
+            background: $bg-color;
+            box-shadow: 0 8px 6px -6px lightgrey;
+            color: green;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

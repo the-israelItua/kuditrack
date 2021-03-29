@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "circ";
+    src: url("circBook.woff2") format("woff2"),
+      url("circBook.woff") format("woff"),
+      url("circBook.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "circ";
+    src: url("circBold.woff2") format("woff2"),
+      url("circBold.woff") format("woff"),
+      url("circBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  

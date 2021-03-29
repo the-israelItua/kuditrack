@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+label {
+  font-weight: bold;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  padding: 0.5rem 1rem;
+}
+
+textarea {
+  padding: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form--error {
+  color: red;
+  margin: 1rem 0;
+}

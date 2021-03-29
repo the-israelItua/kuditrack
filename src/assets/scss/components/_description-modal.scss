@@ -1,0 +1,9 @@
+.description-modal {
+  padding: 2rem 0;
+  &__section {
+    margin-top: 2rem;
+    h5 {
+      color: $dark;
+    }
+  }
+}

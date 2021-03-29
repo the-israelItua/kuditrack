@@ -1,0 +1,46 @@
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background: $bg-color;
+  height: 100vh;
+  h1 {
+    color: $dark;
+    font-size: 3rem;
+    cursor: pointer;
+    span {
+      color: $orange-100;
+    }
+  }
+  &__body {
+    margin-top: 4rem;
+    h3 {
+      margin: 2rem 0;
+    }
+    p {
+      margin: 0;
+    }
+    input {
+      width: 25rem;
+      padding: 1rem;
+      outline: none;
+      @media screen and (max-width: 600px) {
+        width: 20rem;
+      }
+    }
+    button {
+      width: 25rem;
+      background: $dark;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      @media screen and (max-width: 600px) {
+        width: 20rem;
+      }
+    }
+  }
+}

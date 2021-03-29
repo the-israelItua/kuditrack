@@ -1,0 +1,38 @@
+.mobile-nav {
+  display: none;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      cursor: pointer;
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: $bg-color;
+    display: block;
+  }
+  &__income {
+    color: green;
+  }
+  &__expense {
+    color: red;
+  }
+  &__dashboard {
+    color: $dark;
+  }
+  &__transactions {
+    color: $orange-100;
+  }
+}

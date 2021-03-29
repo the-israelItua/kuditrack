@@ -1,0 +1,53 @@
+.side-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba($color: $dark, $alpha: 0.8);
+  }
+  &__content {
+    width: 410px;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    display: flex;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    &__body {
+      flex: 1;
+      overflow-y: scroll;
+      padding: 0 24px 53px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $dark;
+    padding: 3rem 1rem 2rem;
+    h1 {
+      color: $dark;
+      font-weight: bold;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 0;
+    }
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      top: 27px;
+      right: 24px;
+      color: $dark;
+    }
+  }
+}

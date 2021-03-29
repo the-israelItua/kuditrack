@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "circ";
+  src: url("../fonts/circBook.woff2") format("woff2"),
+    url("../fonts/circBook.woff") format("woff"),
+    url("../fonts/circBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "bootstrap/scss/bootstrap.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "circ";
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+@import "./overwrites";
+@import "./variables";
+
+// Pages
+
+@import "./pages/getStarted";
+@import "./pages/homepage";
+
+// Components
+
+@import "./components/sidebar";
+@import "./components/mobile-nav";
+@import "./components/transaction-list";
+@import "./components/transaction-item";
+@import "./components/addItemModal";
+@import "./components/description-modal";
+
+@import "./components/dashboard/modal";
+@import "./components/dashboard/side-modal";
