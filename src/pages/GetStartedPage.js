@@ -26,7 +26,8 @@ const GetStartedPage = () => {
             title: "Initial amount",
             amount,
             description: "Initial amount.",
-            date: new Date().toDateString()
+            date: new Date().toDateString(),
+            time: new Date().toISOString()
         }
         dispatch(setBalance(amount))
         dispatch(setIncome(amount))
